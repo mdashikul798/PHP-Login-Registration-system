@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name ="viewport" content ="width=device-width, initial-scale =1.0">
+	<title>login form</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class ="container" style ="margin: 70px auto 50%;">
+				<!-- Modal content -->
+				<div class ="modal-content">
+					<div class ="modal-header" style ="padding: 35px 50px; text-align: center;">
+						<h4><span class ="glyphicon glyphicon-lock"></span>Login</h4>
+					</div>
+					<div class ="modal-body" style ="padding: 40px 50px; margin: auto;">
+						<form role ="form">
+							<div class ="form-group">
+								<label for ="usrname"><span class ="glyphicon glyphicon-user"></span>UserName</label>
+								<input type ="text" class ="form-control" id ="usrName" placeholder="Enter Email" required>
+							</div>
+							<div class ="form-group">
+								<label for ="psw"><span class ="glyphicon glyphicon-eye-open"></span>Password</label>
+								<input type ="password" class ="form-control" id ="psw" placeholder="Enter Password" required>
+							</div>
+							<div class ="checkbox">
+								<label><input type ="checkbox" value ="" checked>Remember me</label>
+							</div>
+							<button type ="submit" class ="btn btn-block btn-lg btn-info" id="myButton">Login</button>
+
+
+						</form>
+					</div>
+					<div class="modal-footer">
+			         	<p>Not a member? <a href="registration.html">Sign Up</a></p>
+			        </div>
+				</div>
+		</div>
+	<script type="text/javascript">
+    		document.getElementById("myButton").onclick = function () {
+        	location.href = "registration.html";
+   		};
+	</script>
+</body>
+</html>
